@@ -1,4 +1,4 @@
-package gold.jiaxin.provider.service;
+package gold.jiaxin.service;
 
 
 import org.apache.dubbo.config.annotation.DubboService;

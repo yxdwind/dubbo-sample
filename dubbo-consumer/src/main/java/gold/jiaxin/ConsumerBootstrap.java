@@ -1,4 +1,4 @@
-package gold.jiaxin.consumer;
+package gold.jiaxin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

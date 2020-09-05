@@ -1,7 +1,8 @@
-package gold.jiaxin.consumer.controller;
+package gold.jiaxin.controller;
 
-import gold.jiaxin.consumer.service.ISayService;
+import gold.jiaxin.service.ISayService;
 import org.apache.dubbo.config.annotation.DubboReference;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,14 +14,21 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2020/9/5 12:33
  */
 @RestController
-@RequestMapping("main")
+@RequestMapping("/rest")
 public class MainController {
 
     @DubboReference(version = "1.0.0")
     ISayService iSayService;
 
-    @RequestMapping("/say")
-    public void say() {
+    @GetMapping("say")
+    public String say() {
         iSayService.say("michael");
+        return "michael";
     }
+    @GetMapping("hello")
+    public String hello() {
+
+        return "hello michael";
+    }
+
 }

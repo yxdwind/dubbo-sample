@@ -1,4 +1,4 @@
-package gold.jiaxin.provider.service;
+package gold.jiaxin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
