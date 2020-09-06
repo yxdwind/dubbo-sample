@@ -23,5 +23,5 @@
 hs_err_pid*
 
 dubbo-sample.iml
-.iml
+*.iml
 .idea
